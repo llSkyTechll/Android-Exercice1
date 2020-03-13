@@ -6,13 +6,52 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="670dp"
+        android:layout_height="314dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
+        <Button
+            android:id="@+id/button_tryNumber"
+            android:layout_width="403dp"
+            android:layout_height="69dp"
+            android:layout_marginTop="16dp"
+            android:text="TRY !"
+            android:textSize="36sp"
+            app:layout_constraintEnd_toEndOf="@+id/editText_guessedNumber2"
+            app:layout_constraintStart_toStartOf="@+id/editText_guessedNumber1"
+            app:layout_constraintTop_toBottomOf="@+id/editText_guessedNumber1" />
+
+        <EditText
+            android:id="@+id/editText_guessedNumber1"
+            android:layout_width="197dp"
+            android:layout_height="67dp"
+            android:ems="10"
+            android:inputType="number"
+            android:textSize="36sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/editText_guessedNumber2"
+            app:layout_constraintHorizontal_bias="0.77"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/editText_guessedNumber2"
+            android:layout_width="197dp"
+            android:layout_height="67dp"
+            android:layout_marginEnd="84dp"
+            android:ems="10"
+            android:inputType="number"
+            android:textSize="36sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.9"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.502" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
